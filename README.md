@@ -5,7 +5,7 @@ Adding comments to a block of code is an important task that not only helps the 
 ![](/static/app_screenshot.png)
 It's important to keep in mind that comments should be used wisely, as excessive commenting can make the code more difficult to read and can lead to information overload. A good rule of thumb is to comment only when necessary, and to keep comments concise and relevant to the code.
 
-***Approach:**
+**Approach:**
 
 An attention-based pre-trained transformer model (like BERT) is tuned with a sequence-to-sequence dataset, with code-comment pairs for Python programming language.
 Codet5 is a pretrained transformer based architecture for code understanding and generation. Just like a large language model, it has been trained to model programming languages. The pretrained model is available on huggingface which has been fine tuned on the following dataset which contains Python code and docstring pairs.
