@@ -2,3 +2,5 @@
 !pip3 install flask
 !pip3 install -U flask-cors
 !pip3 install transformers
+!pip3 install torch==1.11.0
+!pip3 install datasets==2.1.0
