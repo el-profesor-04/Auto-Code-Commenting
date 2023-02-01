@@ -126,7 +126,7 @@ async function get_content(){
   $highlight_new.value = "Loading...";
   triggerHighlight()
 
-  var response = await fetch("http://localhost:5000/result", options)
+  var response = await fetch("http://localhost:"+process.env.$CDSW_APP_PORT+"/result", options)
   response = await response.json()
   console.log(options.body)
   console.log(response)
