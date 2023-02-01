@@ -4,7 +4,6 @@ from flask_cors import CORS, cross_origin
 
 
 import numpy as np
-from tokenizers import Tokenizer
 from transformers import PreTrainedTokenizerFast
 from transformers import RobertaTokenizer, T5ForConditionalGeneration
 
