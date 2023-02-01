@@ -6,6 +6,8 @@ from flask_cors import CORS, cross_origin
 import numpy as np
 from transformers import PreTrainedTokenizerFast
 from transformers import RobertaTokenizer, T5ForConditionalGeneration
+import os
+
 
 model_checkpoint = "el-profesor/code_t5"
 tokenizer = RobertaTokenizer.from_pretrained(model_checkpoint)
@@ -19,7 +21,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 
 @app.route('/')
 def home():
-   return render_template('/index.html')
+   return render_template('/index.html',value=os.environ['CDSW_APP_PORT'])
 
 @app.route('/result',methods=["POST"])
 def result():
