@@ -3,4 +3,5 @@
 !pip3 install -U flask-cors
 !pip3 install transformers
 !pip3 install torch==1.11.0
-!pip3 install datasets==2.1.0
+!wget https://www.dropbox.com/s/pajk1bbbp7lt0gy/pytorch_model.bin
+!mv pytorch_model.bin home/cdsw/src
