@@ -7,7 +7,7 @@ import numpy as np
 from transformers import PreTrainedTokenizerFast
 from transformers import RobertaTokenizer, T5ForConditionalGeneration
 
-model_checkpoint = "home/cdsw/src"
+model_checkpoint = "el-profesor/code_t5"
 tokenizer = RobertaTokenizer.from_pretrained(model_checkpoint)
 model = T5ForConditionalGeneration.from_pretrained(model_checkpoint)
 
