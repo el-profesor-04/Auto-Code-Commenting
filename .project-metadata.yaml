@@ -1,0 +1,28 @@
+name: Auto Code Comment AMP          # Name your Project
+description: The application generates a short summary for the given input (Python Function/method), it will serve as a comment for that function code.
+author: Narendra Gangwani
+specification_version: 1.0
+prototype_version: 1.0
+date: "2022-01-31"                        # Enter the submission date
+
+runtimes:
+  - editor: Workbench
+    kernel: Python 3.7                    # Fill in the Python version used for your AMP
+    edition: Standard
+
+tasks:
+  - type: run_session
+    name: Install Dependencies
+    script: scripts/install_dependencies.py # enter pathname of your install script
+    memory: 5
+    cpu: 2
+
+  - type: start_application
+    short_summary: Launch application
+    name: Auto Code Comment.      # Name your application
+    subdomain: amp
+    script: scripts/launch_app.py         # enter the pathname of script that launches your visualization/application
+    environment_variables:
+      TASK_TYPE: START_APPLICATION
+    cpu: 2
+    memory: 5
