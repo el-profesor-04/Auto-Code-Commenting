@@ -7,7 +7,7 @@ import numpy as np
 from transformers import PreTrainedTokenizerFast
 from transformers import RobertaTokenizer, T5ForConditionalGeneration
 
-model_checkpoint = "../src"
+model_checkpoint = "/src"
 tokenizer = RobertaTokenizer.from_pretrained(model_checkpoint)
 model = T5ForConditionalGeneration.from_pretrained(model_checkpoint)
 
