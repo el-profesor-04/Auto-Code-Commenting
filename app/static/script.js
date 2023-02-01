@@ -127,7 +127,7 @@ async function get_content(value){
   $highlight_new.value = "Loading...";
   triggerHighlight()
 
-  var response = await fetch("http://localhost:"+value+"/result", options)
+  var response = await fetch(window.location.href+"result", options)
   response = await response.json()
   console.log(options.body)
   console.log(response)
