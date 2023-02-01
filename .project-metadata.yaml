@@ -25,4 +25,4 @@ tasks:
     environment_variables:
       TASK_TYPE: START_APPLICATION
     cpu: 2
-    memory: 5
+    memory: 8
