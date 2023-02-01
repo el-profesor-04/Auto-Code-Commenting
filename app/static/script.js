@@ -91,6 +91,7 @@ window.addEventListener('load', function() {
 });
 
 async function get_content(value){
+    alert(value);
     var $textarea_new = document.getElementById('textarea-input');
     var $highlight_new = document.getElementById('highlight-area');
 
