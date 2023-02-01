@@ -5,6 +5,11 @@ Adding comments to a block of code is an important task that not only helps the 
 ![](/static/app_screenshot.png)
 It's important to keep in mind that comments should be used wisely, as excessive commenting can make the code more difficult to read and can lead to information overload. A good rule of thumb is to comment only when necessary, and to keep comments concise and relevant to the code.
 
+***Approach:**
+
+An attention-based pre-trained transformer model (like BERT) is tuned with a sequence-to-sequence dataset, with code-comment pairs for Python programming language.
+Codet5 is a pretrained transformer based architecture for code understanding and generation. Just like a large language model, it has been trained to model programming languages. The pretrained model is available on huggingface which has been fine tuned on the following dataset which contains Python code and docstring pairs.
+
 The goal of this project was to develop a Machine Learning model to be able to understand a piece of code and describe it precisely.
 
 ## Project Structure
@@ -52,6 +57,10 @@ By launching this applied machine learning prototype (AMP) on CML, the following
 This AMP was developed against Python 3.7. To launch the project on CML:
 
 **As an AMP** - In a CML workspace, click "New Project", add a Project Name, select "AMPs" as the Initial Setup option, copy in this repo URL, click "Create Project", click "Configure Project"
+
+**Important Note: If it takes too long for the launch_app.py to run on CML server, please download the pytorch_model.bin file from /src separately and manually upload it. Then modify the line 12 "model_checkpoint='el-profesor/code_t5'" to "model_checkpoint='../src'" in the app.py and then start the application.
+This can also be done if running locally.**
+
 
 ## Running the Project Outside of CML
 
