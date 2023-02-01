@@ -6,3 +6,4 @@ tensorflow==2.6.4
 rouge_score==0.1.2
 numpy==1.21.6
 flask==2.2.2
+tokenizers
