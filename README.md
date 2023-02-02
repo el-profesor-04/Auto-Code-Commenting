@@ -19,14 +19,14 @@ The goal of this project was to develop a Machine Learning model to be able to u
 ├── README.md
 ├── app                                       # app.py file consists of flask code and js and html files make up the frontend app.                   
 │   ├── app.py
-|   ├── templates
-|   |   ├── index.html
-|   ├── static
-|   |   ├── script.js
-|   |   ├── style.css
-|   |   ├── img1.png
-|   |   ├── GIF1.gif
-|   |   ├── gif2.gif
+│   ├── templates
+│   │   ├── index.html
+│   └── static
+│       ├── script.js
+│       ├── style.css
+│       ├── img1.png
+│       ├── GIF1.gif
+│       └── gif2.gif
 ├── requirements.txt                          # Requirement files
 ├── scripts                                   # Utility scripts for project and application setup
 │   ├── download_data.py
@@ -44,7 +44,7 @@ The goal of this project was to develop a Machine Learning model to be able to u
 │   ├── img1.png
 │   ├── gif2 copy.gif
 │   └── app_screenshot.png
-├── .project-metadata.yaml
+└── .project-metadata.yaml
 ```
 
 By launching this applied machine learning prototype (AMP) on CML, the following steps will be taken to recreate the project in your workspace:
