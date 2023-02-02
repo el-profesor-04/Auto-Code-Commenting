@@ -20,7 +20,7 @@ The goal of this project was to develop a Machine Learning model to be able to u
 ├── app                                       # app.py file consists of flask code and js and html files make up the frontend app.                   
 │   ├── app.py
 │   ├── templates
-│   │   ├── index.html
+│   │   └── index.html
 │   └── static
 │       ├── script.js
 │       ├── style.css
